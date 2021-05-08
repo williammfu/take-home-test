@@ -1,0 +1,22 @@
+.Partners {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #5A5A5A;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+}
+
+.Partners-logo {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-gap: 2rem;
+  justify-items: center;
+  margin-top: 2rem;
+}
+
+.Logo {
+  height: 3.5rem;
+}

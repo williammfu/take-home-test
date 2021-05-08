@@ -1,0 +1,48 @@
+.Catalog {
+  text-align: left;
+  transition:all .5s ease-in-out;
+  -o-transition:all .5s ease-in-out; 
+  -moz-transition:all .5s ease-in-out; 
+  -webkit-transition:all .5s ease-in-out;
+}
+
+.Paddings {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.Title {
+  font-weight: 700;
+  display: block;
+  font-size: 2.25rem;
+  color: #303030;
+}
+
+.Subtitle {
+  font-weight: 400;
+  display: block;
+  font-size: 1.4rem;
+  margin-top: 0.25rem;
+  color: #707070;
+}
+
+.Items {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 2rem;
+  padding-top: 2rem;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 1024px) {
+  .Title {
+    font-size: 1.5rem;
+  }
+  .Subtitle {
+    font-size: 1rem;
+  }
+  .Items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

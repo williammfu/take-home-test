@@ -1,0 +1,80 @@
+.Padding-x {
+  padding-left: 9rem;
+  padding-right: 9rem;
+}
+
+.App-header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
+  height: 3rem;
+  position: sticky;
+  z-index: 1;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition:all .4s ease-in-out; 
+  -o-transition:all .4s ease-in-out; 
+  -moz-transition:all .4s ease-in-out; 
+  -webkit-transition:all .4s ease-in-out;
+}
+
+.Header-content {
+  color: #303030;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.Header-logo-wrap {
+  margin-right: auto;
+}
+
+.Header-logo {
+  height: 1.5rem;
+  transition:all .4s ease-in-out; 
+  -o-transition:all .4s ease-in-out; 
+  -moz-transition:all .4s ease-in-out; 
+  -webkit-transition:all .4s ease-in-out;
+}
+
+.Header-menu {
+  height: 1.25rem;
+}
+
+.Download {
+  color: #A30926;
+  font-weight: 700;
+}
+
+.Width {
+  width: 428px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .App-header {
+    height: 6rem;
+  }
+  .Header-logo {
+    height: 3rem;
+  }
+  .Header-menu {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .Header-content {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .Padding-x {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}

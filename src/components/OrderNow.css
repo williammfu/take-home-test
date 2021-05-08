@@ -1,0 +1,58 @@
+.OrderNow {
+  padding-top: 3rem;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-bottom: 4rem;
+}
+
+.OrderSplit {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2rem;
+}
+
+.Caption {
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: #707070;
+}
+
+.Check-lists {
+  padding-top: 1rem;
+}
+
+.Checks {
+  margin-right: 1rem;
+}
+
+.Check-list-item {
+  margin-bottom: 2rem;
+}
+
+.Entry {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #303030;
+}
+
+.Group-photo {
+  border-radius: 1.5rem;
+  height: 22rem;
+  width: 35rem;
+  object-fit: cover;
+  margin-top: 0.75rem;
+}
+
+.Button {
+  background-color: #A30926;
+  color: #FAFAFA;
+  border-width: 0;
+  border-radius: 0.75rem;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  margin-top: 1.5rem;
+}

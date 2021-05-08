@@ -1,8 +1,6 @@
 .Banner {
   display: flex;
   flex-direction: row;
-  /* justify-content: flex-end; */
-  height: 25rem;
   padding-top: 3rem;
   padding-left: 2rem;
   background-position: center;
@@ -12,8 +10,8 @@
 
 .Heading {
   font-weight: 700;
-  max-width: 35%;
-  padding-top: 7rem;
+  max-width: 40%;
+  padding-top: 6rem;
   padding-left: 8rem;
   padding-right: 4rem;
   color: #303030;
@@ -21,14 +19,14 @@
 
 .Font-small {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 1.25;
   opacity: 70%;
 }
 
 .Font-large {
   margin-bottom: 1.75rem;
-  font-size: 2.25rem;
+  font-size: 40px;
   line-height: 1.5;
 }
 
@@ -41,6 +39,7 @@
 
 .Mockup {
   display: block;
+  height: 26rem;
 }
 
 .Mockup-mobile {
@@ -55,7 +54,7 @@
   display: block;
 }
 
-@media only screen and (max-width: 1040px) {
+@media only screen and (min-width: 360px) and (max-width: 1040px) {
   .Mockup {
     display: none;
   }
@@ -65,7 +64,7 @@
     padding-right: 1rem;
   }
   .Banner {
-    height: 15rem;
+    height: 20rem;
     padding-left: 1rem;
   }
   .Mockup-mobile {
@@ -83,11 +82,5 @@
   }
   .Play-store {
     display: none;
-  }
-}
-
-@media only screen and (max-width: 360px) {
-  .Heading {
-    padding-left: 0;
   }
 }
