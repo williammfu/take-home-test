@@ -7,6 +7,7 @@ class Navbar extends React.Component {
   render() {
     return(
       <div className="App-header Padding-x">
+        <div className="Header-full-wrap">
           <a className="Header-logo-wrap" href="/">
             <img src={hangryLogo} alt="Logo" className="Header-logo"/>
           </a>
@@ -16,6 +17,7 @@ class Navbar extends React.Component {
           <a className="Header-content" href="/">Karier</a>
           <a className="Header-content Download" href="/">Download App</a>
           <img src={hamburger} alt="icon" className="Header-menu"/>
+        </div>
       </div>
     )
   }

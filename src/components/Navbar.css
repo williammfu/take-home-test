@@ -5,13 +5,8 @@
 
 .App-header {
   background-color: white;
-  display: flex;
-  flex-direction: row;
-  column-gap: 2rem;
-  align-items: center;
-  justify-content: flex-end;
-  height: 3rem;
   position: sticky;
+  top: 0;
   z-index: 1;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -19,6 +14,15 @@
   -o-transition:all .4s ease-in-out; 
   -moz-transition:all .4s ease-in-out; 
   -webkit-transition:all .4s ease-in-out;
+}
+
+.Header-full-wrap {
+  display: flex;
+  flex-direction: row;
+  height: 6rem;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .Header-content {
@@ -34,7 +38,7 @@
 }
 
 .Header-logo {
-  height: 1.5rem;
+  height: 2.5rem;
   transition:all .4s ease-in-out; 
   -o-transition:all .4s ease-in-out; 
   -moz-transition:all .4s ease-in-out; 
@@ -42,7 +46,8 @@
 }
 
 .Header-menu {
-  height: 1.25rem;
+  display: none;
+  height: 1.75rem;
 }
 
 .Download {
@@ -50,31 +55,32 @@
   font-weight: 700;
 }
 
-.Width {
-  width: 428px;
-}
-
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1040px) {
   .App-header {
-    height: 6rem;
-  }
-  .Header-logo {
     height: 3rem;
   }
-  .Header-menu {
-    display: none;
+  .Header-full-wrap {
+    width: 360px;
+    height: 3rem;
+    margin: 0 auto;  
   }
-}
-
-@media only screen and (max-width: 1024px) {
+  .Header-logo {
+    height: 1.75rem;
+  }
+  .Header-menu {
+    display: block;
+  }
   .Header-content {
     display: none;
   }
+  .Padding-x {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
-@media only screen and (max-width: 360px) {
-  .Padding-x {
-    padding-left: 1rem;
-    padding-right: 1rem;
+@media only screen and (max-width: 380px) {
+  .Header-full-wrap {
+    width: auto;
   }
 }

@@ -28,7 +28,7 @@ class OrderNow extends React.Component {
             </div>
             <button className="Button">Pesan Sekarang</button>
           </div>
-          <img src={Order} alt="Group" className="Group-photo"/>
+          {/* <img src={Order} alt="Group" className="Group-photo"/> */}
         </div>
       </div>
     )
