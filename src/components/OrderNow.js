@@ -7,9 +7,9 @@ class OrderNow extends React.Component {
   render() {
     return(
       <div className="OrderNow">
-        <span className="Title">Makin rame, makin hemat!</span>
         <div className="OrderSplit">
           <div>
+            <span className="Order-title">Makin rame, makin hemat!</span>
             <p className="Caption">Nikmati keuntungan dengan minimum pembelian 20 porsi menu apa aja. 
               Cocok untuk hidangan segala acara!</p>
             <div className="Check-lists">
@@ -28,7 +28,7 @@ class OrderNow extends React.Component {
             </div>
             <button className="Button">Pesan Sekarang</button>
           </div>
-          {/* <img src={Order} alt="Group" className="Group-photo"/> */}
+          <img src={Order} alt="Group" className="Group-photo"/>
         </div>
       </div>
     )
