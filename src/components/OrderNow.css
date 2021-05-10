@@ -61,8 +61,14 @@
   margin-top: 1.5rem;
 }
 
+.TnC {
+  margin-left: 2.75rem;
+}
+
 @media only screen and (min-width: 360px) and (max-width: 1040px) {
   .OrderNow {
+    width: 360px;
+    margin: 0 auto;
     padding: 0 1rem 5rem 1rem;
   }
   .OrderSplit {
@@ -95,5 +101,9 @@
     width: 100%;
     padding: 0.75rem 1.5rem 0.75rem 1.5rem;
     margin-top: 1rem;
+  }
+  .TnC {
+    margin-left: 2rem;
+    font-size: 0.75rem;
   }
 }

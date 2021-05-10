@@ -24,6 +24,7 @@ class OrderNow extends React.Component {
               <div className="Check-list-item">
                 <img src={checkList} alt="Group" class="Checks"/>
                 <span className="Entry">Gratis biaya kirim</span>
+                <div className="TnC">*Syarat dan ketentuan berlaku </div>
               </div>
             </div>
             <button className="Button">Pesan Sekarang</button>

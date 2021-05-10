@@ -1,3 +1,7 @@
+.Image-absolute {
+  position: relative;
+}
+
 .Catalog-image {
   width: 18rem;
   height: 18rem;
@@ -10,6 +14,24 @@
   -o-transition:all .4s ease-in-out; 
   -moz-transition:all .4s ease-in-out; 
   -webkit-transition:all .4s ease-in-out;
+}
+
+.Catalog-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: absolute;
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  left: 1.25rem;
+  top:  1.25rem;
+}
+
+.Catalog-logo-img {
+  width: 70%;
+  height: 70%;
 }
 
 .Name-and-arrow {
@@ -39,12 +61,19 @@
   transform: translate(10px, 0);
 }
 
-@media only screen and (min-width: 360px) and (max-width: 1024px) {
+@media only screen and (min-width: 360px) and (max-width: 1040px) {
   .Catalog-image {
-    width: 10em;
+    width: 10rem;
     height: 10rem;
     border-radius: 0.75rem;
     margin-bottom: 0.5rem;
+  }
+  .Catalog-logo {
+    top: 1rem;
+    left: 1rem;
+    bottom: 0;
+    width: 2.75rem;
+    height: 2.75rem;
   }
   .Vendor-name {
     font-size: 1rem;
@@ -55,7 +84,14 @@
     margin-top: 0.1rem;
   }
   .Arrow {
-    width: 1;
+    width: 1rem;
     height: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1040px) and (max-width: 1200px) {
+  .Catalog-image {
+    width: 16.25rem;
+    height: 16.25rem;
   }
 }
