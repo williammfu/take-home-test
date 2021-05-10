@@ -71,8 +71,21 @@
 
 @media only screen and (min-width: 1040px) and (max-width: 1100px) {
   .Group-photo {
-    height: 15rem;
-    width: 25rem;
+    border-radius: 1rem;
+    height: 18rem;
+    width: 32rem;
+  }
+  .Order-title {
+    font-size: 1.75rem;
+  }
+  .Caption {
+    font-size: 1rem;
+  }
+  .Entry {
+    font-size: 1.25rem;
+  }
+  .Button {
+    font-size: 1.25rem;
   }
 }
 

@@ -8,6 +8,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  height: 6rem;
   --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   transition:all .4s ease-in-out; 
@@ -55,6 +56,36 @@
   font-weight: 700;
 }
 
+.Mobile-routes {
+  display: none;
+  width: 360px;
+  background-color: #FFFFFF;
+  color: #303030;
+  margin: 0 auto;
+  transition:all .4s ease-in-out; 
+  -o-transition:all .4s ease-in-out; 
+  -moz-transition:all .4s ease-in-out; 
+  -webkit-transition:all .4s ease-in-out;
+  --tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.Route-small {
+  text-decoration: none;
+  color: #303030;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.Route-small-download {
+  text-decoration: none;
+  color: #A30926;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 1rem 0 1rem 1rem;
+}
+
 @media only screen and (max-width: 1040px) {
   .App-header {
     height: 3rem;
@@ -62,7 +93,7 @@
   .Header-full-wrap {
     width: 360px;
     height: 3rem;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
   .Header-logo {
     height: 1.75rem;

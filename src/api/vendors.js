@@ -1,3 +1,4 @@
+// Mock API call
 class Vendors {
   static fetchVendors() {
     return [
