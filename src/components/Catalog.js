@@ -1,11 +1,18 @@
 import React from 'react'
 import CatalogItem from './CatalogItem'
-import Sushi from '../static/sushi.jpg'
-import Gyudon from '../static/gyudon.jpg'
-import FishChips from '../static/fish-chips.jpg'
+import Vendors from '../api/vendors'
 import './Catalog.css'
 
 class Catalog extends React.Component {
+  state = {
+    vendors: []
+  }
+
+  componentDidMount() {
+    const vendors = Vendors.fetchVendors()
+    this.setState({ vendors })
+  }
+
   render() {
     return(
       <div className="Catalog">
@@ -18,9 +25,10 @@ class Catalog extends React.Component {
             setiap waktu santapmu
           </div>
           <div className="Items">
-            <CatalogItem imgSrc={Sushi} vendorName="Sushi" vendorType="Japanese" location="Tangerang"/>
-            <CatalogItem imgSrc={Gyudon} vendorName="Gyudon" vendorType="Japanese" location="Tangerang"/>
-            <CatalogItem imgSrc={FishChips} vendorName="Fish n' Chips" vendorType="Western" location="Jakarta"/>
+            { this.state.vendors.map( (vendor, idx) => 
+              <CatalogItem key={idx} imgSrc={vendor.img_url} vendorName={vendor.name}
+               vendorType={vendor.type} logo={vendor.logo_url} location={vendor.origin}/>
+            )}
           </div>
         </div>
       </div>

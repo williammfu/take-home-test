@@ -8,7 +8,7 @@ class CatalogItem extends React.Component {
         <div className="Image-absolute">
           <img src={this.props.imgSrc} alt="Vendor" className="Catalog-image"/>
           <div className="Catalog-logo">
-            <img src="https://pbs.twimg.com/profile_images/1244503730143150080/tNPv72Bk_400x400.jpg"
+            <img src={this.props.logo}
              alt="Profile" className="Catalog-logo-img"/>
           </div>
         </div>

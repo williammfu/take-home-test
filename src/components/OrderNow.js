@@ -14,15 +14,15 @@ class OrderNow extends React.Component {
               Cocok untuk hidangan segala acara!</p>
             <div className="Check-lists">
               <div className="Check-list-item">
-                <img src={checkList} alt="Group" class="Checks"/>
+                <img src={checkList} alt="Group" className="Checks"/>
                 <span className="Entry">Beragam pilihan menu</span>
               </div>
               <div className="Check-list-item">
-                <img src={checkList} alt="Group" class="Checks"/>
+                <img src={checkList} alt="Group" className="Checks"/>
                 <span className="Entry">Semua menu diskon 20%</span>
               </div>
               <div className="Check-list-item">
-                <img src={checkList} alt="Group" class="Checks"/>
+                <img src={checkList} alt="Group" className="Checks"/>
                 <span className="Entry">Gratis biaya kirim</span>
                 <div className="TnC">*Syarat dan ketentuan berlaku </div>
               </div>
